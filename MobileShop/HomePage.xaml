@@ -2,14 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileShop.HomePage"
-             Title="HomePage">
-    <VerticalStackLayout 
-        HorizontalOptions="Center" 
-        VerticalOptions="Center"
-        Padding="24" Spacing="24"
-        >
-<Image Source="picture1.png" />
+             Title="HomePage"
+             BackgroundImageSource="bg.png">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" Spacing="12" Padding="24">
+            <Image Source="delivery_1.png" />
 
-
-    </VerticalStackLayout>
+            <Label Text="Mobile Shop" HorizontalTextAlignment="Center" FontSize="32" FontAttributes="Bold"/>
+            <Label Text="Everything on doorstep!" HorizontalTextAlignment="Center" FontSize="18" />
+            <Button Margin="0,400,0,0" Text="Get Started" BackgroundColor="Orange" 
+                    x:Name="btnGetStarted" Clicked="btnGetStarted_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

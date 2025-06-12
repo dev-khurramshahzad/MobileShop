@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileShop.Views.Login"
+             Title="Login" 
+             BackgroundImageSource="bg.png"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" Spacing="12" Padding="24">
+            <Image WidthRequest="200" Source="user_avatar.png" />
+
+            <Label Text="Login" HorizontalTextAlignment="Center" FontSize="32" FontAttributes="Bold"/>
+            <Button Margin="0,200,0,0" Text="Login" BackgroundColor="Orange" 
+                 x:Name="btnLogin" Clicked="btnLogin_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

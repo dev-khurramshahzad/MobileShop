@@ -1,4 +1,5 @@
-﻿namespace MobileShop
+﻿
+namespace MobileShop
 {
     public partial class App : Application
     {
