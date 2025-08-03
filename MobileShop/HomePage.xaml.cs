@@ -1,4 +1,5 @@
 using MobileShop.Views;
+using static SQLite.SQLite3;
 
 namespace MobileShop;
 
@@ -11,7 +12,7 @@ public partial class HomePage : ContentPage
 
     
 
-    private void btnGetStarted_Clicked(object sender, EventArgs e)
+    private  void btnGetStarted_Clicked(object sender, EventArgs e)
     {
         App.Current.MainPage = new Login();
     }

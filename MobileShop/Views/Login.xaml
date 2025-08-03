@@ -7,12 +7,17 @@
              >
 
     <ScrollView>
-        <VerticalStackLayout VerticalOptions="Center" Spacing="12" Padding="24">
+        <VerticalStackLayout VerticalOptions="Center" Spacing="18" Padding="24">
             <Image WidthRequest="200" Source="user_avatar.png" />
 
             <Label Text="Login" HorizontalTextAlignment="Center" FontSize="32" FontAttributes="Bold"/>
+            <Entry Placeholder="Email" Keyboard="Email" PlaceholderColor="White" x:Name="txtEmail" FontSize="18" TextColor="White" FontAttributes="Bold" />
+            <Entry Placeholder="Password" PlaceholderColor="White" x:Name="txtPassword" IsPassword="True" FontSize="18" TextColor="White" FontAttributes="Bold" />
+             
             <Button Margin="0,200,0,0" Text="Login" BackgroundColor="Orange" 
-                 x:Name="btnLogin" Clicked="btnLogin_Clicked"/>
+                 x:Name="btnLogin" Clicked="btnLogin_Clicked_1"/>
+
+            <Button Text="Register" BackgroundColor="Green" TextColor="White" x:Name="btnRegister" Clicked="btnRegister_Clicked" />
         </VerticalStackLayout>
     </ScrollView>
 

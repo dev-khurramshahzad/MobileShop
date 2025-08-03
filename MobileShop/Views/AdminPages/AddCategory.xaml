@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileShop.Views.AdminPages.AddCategory"
+             Title="Add Category">
+    <VerticalStackLayout Spacing="20" Padding="24">
+        <Label Text="Add Category" HorizontalOptions="Center" FontSize="28" />
+        <Image x:Name="ImagePlaceholder" WidthRequest="100" HorizontalOptions="Center" Source="camera_icon.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Entry x:Name="txtCategoryName" Placeholder="Category Name"   />
+        <Entry x:Name="txtCategoryDescription" Placeholder="Category Description"   />
+
+        <ActivityIndicator IsVisible="False" IsRunning="True" x:Name="IndProgress"/>
+        <Button Text="Add Category"  x:Name="btnAddCat" Clicked="btnAddCat_Clicked"/>
+        
+
+
+    </VerticalStackLayout>
+</ContentPage>
