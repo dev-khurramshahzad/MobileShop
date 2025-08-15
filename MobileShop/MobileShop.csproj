@@ -66,7 +66,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\AdminPages\ViewCategory.xaml.cs">
+	    <DependentUpon>ViewCategory.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\AdminPages\EditCategory.xaml.cs">
+	    <DependentUpon>EditCategory.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\AdminPages\ViewCategory.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\AdminPages\EditCategory.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\AdminPages\AddCategory.xaml">

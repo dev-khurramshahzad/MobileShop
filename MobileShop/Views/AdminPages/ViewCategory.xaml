@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileShop.Views.AdminPages.ViewCategory"
+             Title="View Category">
+    <VerticalStackLayout Spacing="20" Padding="24">
+        <Label Text="View Category" HorizontalOptions="Center" FontSize="28" />
+        <Image x:Name="ImagePlaceholder" HorizontalOptions="CenterAndExpand" Source="{Binding Image,TargetNullValue='camera_icon.png'}" />
+
+
+        <Label Text="{Binding CatName}" x:Name="txtCategoryName"   />
+        <Label Text="{Binding Details}" x:Name="txtCategoryDescription" />
+
+        <ActivityIndicator IsVisible="False" IsRunning="True" x:Name="IndProgress"/>
+        <Button Text="Edit Category"  x:Name="BtnEdit" Clicked="BtnEdit_Clicked"/>
+        
+        <Button Text="Go Back" BackgroundColor="BlueViolet" TextColor="White" x:Name="btnBack" Clicked="btnBack_Clicked"/>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

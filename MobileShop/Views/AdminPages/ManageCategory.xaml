@@ -7,7 +7,7 @@
 
         <Label Text="Manage Categories" HorizontalOptions="Center" FontSize="28" />
         
-        <ListView x:Name="DataList">
+        <ListView ItemTapped="DataList_ItemTapped" x:Name="DataList">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell Text="{Binding CatName}" ImageSource="{Binding Image}" Detail="{Binding Details}" />
