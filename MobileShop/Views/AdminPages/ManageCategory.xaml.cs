@@ -47,11 +47,12 @@ public partial class ManageCategory : ContentPage
             }
             else if (selection == "View")
             {
-                App.Current.MainPage = new ViewCategory(item);
+                await Navigation.PushAsync( new ViewCategory(item));
             }
             else if (selection == "Edit")
             {
-                App.Current.MainPage = new EditCategory(item);
+                await Navigation.PushAsync(new EditCategory(item));   
+               
             }
         }
         catch (Exception ex)

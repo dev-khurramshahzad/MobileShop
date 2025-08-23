@@ -10,8 +10,20 @@
 
             <Label Text="Mobile Shop" HorizontalTextAlignment="Center" FontSize="32" FontAttributes="Bold"/>
             <Label Text="Everything on doorstep!" HorizontalTextAlignment="Center" FontSize="18" />
-            <Button Margin="0,400,0,0" Text="Get Started" BackgroundColor="Orange" 
+            
+            
+            
+            
+            <Button Margin="0,300,0,0" Text="Get Started" BackgroundColor="Orange" 
                     x:Name="btnGetStarted" Clicked="btnGetStarted_Clicked"/>
+
+
+            <Label HorizontalTextAlignment="Center" Text="Admin Panel" TextColor="White">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+
+            </Label>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

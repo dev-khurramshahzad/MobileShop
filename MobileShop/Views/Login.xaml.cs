@@ -12,9 +12,9 @@ public partial class Login : ContentPage
 
     
 
-    private void btnRegister_Clicked(object sender, EventArgs e)
+    private async void btnRegister_Clicked(object sender, EventArgs e)
     {
-        App.Current.MainPage = new Register();
+        await Navigation.PushAsync(new Register());
     }
 
     private async void btnLogin_Clicked_1(object sender, EventArgs e)
@@ -23,7 +23,7 @@ public partial class Login : ContentPage
         if (u != null)
         {
             await DisplayAlert("Message", "Login Successful", "OK");
-            App.Current.MainPage = new HomePage();
+            App.Current.MainPage = new NavigationPage(new HomePage());
         }
         else
         {

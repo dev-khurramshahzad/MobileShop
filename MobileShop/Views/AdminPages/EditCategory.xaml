@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileShop.Views.AdminPages.EditCategory"
-             Title="Add Category">
+             Title="Edit Category">
     <VerticalStackLayout Spacing="20" Padding="24">
         <Label Text="Edit Category" HorizontalOptions="Center" FontSize="28" />
         <Image x:Name="ImagePlaceholder" WidthRequest="100" HorizontalOptions="Center" Source="{Binding Image,TargetNullValue='camera_icon.png'}">

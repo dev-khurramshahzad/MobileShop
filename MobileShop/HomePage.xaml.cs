@@ -1,4 +1,5 @@
 using MobileShop.Views;
+using MobileShop.Views.AdminPages;
 using static SQLite.SQLite3;
 
 namespace MobileShop;
@@ -12,8 +13,13 @@ public partial class HomePage : ContentPage
 
     
 
-    private  void btnGetStarted_Clicked(object sender, EventArgs e)
+    private async  void btnGetStarted_Clicked(object sender, EventArgs e)
     {
-        App.Current.MainPage = new Login();
+        await Navigation.PushAsync(new Login());
+    }
+
+    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        App.Current.MainPage = new AdminShell();
     }
 }

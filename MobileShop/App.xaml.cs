@@ -12,7 +12,11 @@ namespace MobileShop
         {
             InitializeComponent();
 
-            MainPage = new ManageCategory();
+            MainPage = new NavigationPage(new HomePage())
+            {
+                BarBackgroundColor = Colors.DarkBlue,
+                BarTextColor = Colors.White
+            };
         }
     }
 }

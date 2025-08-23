@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:admin="clr-namespace:MobileShop.Views.AdminPages"
+             x:Class="MobileShop.Views.AdminPages.AdminShell"
+             Shell.BackgroundColor="DarkBlue"
+               Shell.TitleColor="White"
+               Shell.ForegroundColor="White"
+               Shell.NavBarHasShadow="True"
+               >    
+
+    <Shell.FlyoutHeader>
+        <StackLayout HeightRequest="200" BackgroundColor="DarkBlue" Padding="12">
+            <Label Text="Admin Panel" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <ShellContent Title="Admin Home" Icon="camera_icon.png" ContentTemplate="{DataTemplate admin:AdminHome }" />
+    <ShellContent Title="Manage Category" Icon="arrow.png" ContentTemplate="{DataTemplate admin:ManageCategory }" />
+    <ShellContent Title="Add Category" Icon="arrow.png" ContentTemplate="{DataTemplate admin:AddCategory }" />
+
+
+
+</Shell>
